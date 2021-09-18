@@ -1,13 +1,28 @@
-.header {
-  background-color: gray;
-  display: flex;
-}
 nav{
+  background-color: gray;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
-   
 }
 span {
+  color: brown;
+}
+.home{
+  margin-top: 10px;
+  background-color: rgb(225, 206, 206);
+  height: 300px;
+  background-image: url("../images/background/image1.jpeg");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
+}
+.description{
+  max-width: 800px;
+  margin-left: 100px;
+  text-align: center;
+}
+img{
+  float: right;
 }
