@@ -1,23 +1,13 @@
-.container-fluid {
-  background-color: rgb(106, 92, 92);
-  /* opacity: 0.9; */
-}
 .header {
-  background-color: #ca2828;
+  background-color: gray;
+  display: flex;
 }
-.description {
-  text-align: center;
-  background-image: url("../images/background/delish-homemade-pizza-horizontal-1542312378.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.7;
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+   
 }
-.order {
-  background-color: rgb(240, 26, 26);
-  /* background-image: url("../images/background/homemade-pizza-2.jpg"); */
-  opacity: 80%;
-}
-.order-placement {
-  max-width: 700px;
+span {
 }
