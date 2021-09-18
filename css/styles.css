@@ -11,7 +11,7 @@ span {
 .home{
   margin-top: 10px;
   background-color: rgb(225, 206, 206);
-  height: 300px;
+  height: auto;
   background-image: url("../images/background/image1.jpeg");
   background-size: 300px;
   background-repeat: no-repeat;
@@ -23,6 +23,11 @@ span {
   margin-left: 100px;
   text-align: center;
 }
-img{
+/* img{
   float: right;
+} */
+.recipe1{
+  height: 300px;
+  width: 300px;
+  border: 2px solid black;
 }
