@@ -50,36 +50,47 @@ $(document).ready(function() {
     /////////////////////////////////////////////
     const reducer = (firstValue, secondValue)=>firstValue + secondValue;
     var totalToppingPrice = costOfSelectedToppings.reduce(reducer);
-    var totalPizzaCharges = deliveryFee + selectedQuantity*(CostOfSelectedPizzaSize+costOfSelectedCrust+totalToppingPrice)
+    /// THE VARIABLE BELOW HAS BEEN PRESENTED AS A GLOBAL VARIABLE
+    totalPizzaCharges = deliveryFee + selectedQuantity*(CostOfSelectedPizzaSize+costOfSelectedCrust+totalToppingPrice)
     alert(totalPizzaCharges)
     ////////////////////////////////////
-    $("#delivery").change(function(){
-      if(this.checked == true){
-        $("#delivery-location").show().css("display", "flex");
-      }
-    });
-    $("#pickup").change(function(){
-      if(this.checked == true){
-        $("#delivery-location").hide()
-      }
-    });
-  
-    $("form#delivery-location").submit(function(event){
-      event.preventDefault();
-  
-      var enteredFirstName = $("#first-name").val();
-      var enteredSecondName = $("#last-name").text();
-      var enteredIdNumber = $("#id-number").val();
-      var enteredPhoneNumber = $("#phone-number").val();
-      var enteredStreet = $("#street").text();
-      var enteredCity = $("#city").text();
-      var enteredCounty = $("#county").text();
-  
-      var selectedDeliveryLocation = new Delivery(enteredFirstName, enteredSecondName, enteredIdNumber, enteredPhoneNumber, enteredStreet, enteredCity, enteredCounty);
-      alert(selectedDeliveryLocation)
-      alert(enteredFirstName)
 
-      
-    });
+  });
+  $("#delivery").change(function(){
+    if(this.checked == true){
+      $("#delivery-location").show().css("display", "flex");
+    }
+  });
+  $("#pickup").change(function(){
+    if(this.checked == true){
+      $("#delivery-location").hide()
+    }
+  });
+
+  $("form#delivery-location").submit(function(event){
+    event.preventDefault();
+
+    var enteredFirstName = $("#first-name").val();
+    var enteredSecondName = $("#last-name").text();
+    var enteredIdNumber = $("#id-number").val();
+    var enteredPhoneNumber = $("#phone-number").val();
+    var enteredStreet = $("#street").text();
+    var enteredCity = $("#city").text();
+    var enteredCounty = $("#county").text();
+
+    var selectedDeliveryLocation = new Delivery(enteredFirstName, enteredSecondName, enteredIdNumber, enteredPhoneNumber, enteredStreet, enteredCity, enteredCounty);
+    alert(selectedDeliveryLocation)
+    alert(enteredFirstName)
+    alert(totalPizzaCharges)
+    $("#your-order").html("this is your work")
+
+
+
+
+    /// OUTPUT SECTION
+
+    // $("button#checkout").submit(function(){
+    //   $("#your-order"). append("this is your work")
+    // })
   });
 })
