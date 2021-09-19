@@ -54,6 +54,7 @@ $(document).ready(function() {
     totalPizzaCharges = deliveryFee + selectedQuantity*(CostOfSelectedPizzaSize+costOfSelectedCrust+totalToppingPrice)
     alert(totalPizzaCharges)
     ////////////////////////////////////
+    $(".results").html("you have ordered a " + selectedPizzaName + "with a "+ selectedCrust +" crust")
 
   });
   $("#delivery").change(function(){
@@ -82,7 +83,7 @@ $(document).ready(function() {
     alert(selectedDeliveryLocation)
     alert(enteredFirstName)
     alert(totalPizzaCharges)
-    $("#your-order").html("this is your work")
+    $(".location").html("Your order will be delivered at")
 
 
 
