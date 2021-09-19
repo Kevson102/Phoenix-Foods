@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Munchers' Pizza</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="header">
+        <nav>
+          <h1>Munchers' <span>Pizza</span></h1>
+          <p>Home</p>
+          <p>About</p>
+          <p>Recipe</p>
+        </nav>
+      </div>
+      <div class="home">
+        <!-- <img src="./images/background/image2.png" height="200px" alt=""> -->
+        <div class="description">
+          <h2>Welcome to Munchers' Pizza.</h2>
+          <h3>Your satisfaction is our priority.</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+      </div>
+      <div class="section">
+        <h3>Our Recipe</h3>
+        <div class="recipe">
+          <div class="recipe1">
+            <img src="./images/Toppings/beef topping.png" width="280px" alt="Beef Toppings">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+            </p>
+          </div>
+          <div class="recipe1">
+            <img src="./images/Toppings/black olives and tomatoes.png" width="280px" alt="Black Olives and Tomatoes">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+            </p>
+          </div>
+          <div class="recipe1">
+            <img src="./images/Toppings/mushroom topping.png" width="280px" alt="Black Olives and Tomatoes">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+            </p>
+          </div>
+          <div class="recipe1">
+            <img src="./images/Toppings/beef topping.png" width="280px" alt="Beef Toppings">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+            </p>
+          </div>
+        </div>
+        <div class="recipe">
+          <div class="recipe1">
+            <img src="./images/Toppings/red onion topping.png" width="280px" alt="Beef Toppings">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+            </p>
+          </div>
+          <div class="recipe1">
+            <img src="./images/Toppings/sousage topping.png" width="280px" alt="Black Olives and Tomatoes">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+            </p>
+          </div>
+          <div class="recipe1">
+            <img src="./images/Toppings/mushroom topping.png" width="280px" alt="Black Olives and Tomatoes">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+            </p>
+          </div>
+          <div class="recipe1">
+            <img src="./images/Toppings/beef topping.png" width="280px" alt="Beef Toppings">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="orders" id="orders">
+        <h3>Place your Order Here. We are glad to serve you</h3>
+        <form action="" id="order">
+          <div class="form-group card">
+            <fieldset>
+              <label for="pizza-type">Choose your preferred flavour</label>
+              <select name="pizza-type" id="pizza-type">
+                <option value="pizza_neapolitan">Pizza Neopolitan</option>
+                <option value="">pizza type 2</option>
+                <option value="">pizza type 2</option>
+                <option value="">pizza type 2</option>
+                <option value="">pizza type 2</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
+              <label for="Pizza-size">Select Pizza size</label>
+              <select name="size" id="size">
+                <option value="500">Small</option>
+                <option value="800">Medium</option>
+                <option value="1200">Large</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <label for="Crust">Choose a Crust</label>
+              <select name="crust" id="crust">
+                <option value="200">Crispy</option>
+                <option value="250">Stuffed</option>
+                <option value="300">Glutten-Free</option>
+              </select>
+            </fieldset>
+            <h5>Choose Toppings</h5>
+            <div>
+              <input type="checkbox" name="topping" class="topping" text="Beef toppings (Ksh. 100)" value="100">Beef toppings (Ksh. 100) <br>
+              <input type="checkbox" name="topping" class="topping" value="150"> Black Olives Toppings (ksh. 150) <br>
+              <input type="checkbox" name="topping" class="topping" value="70"> Mushroom Topping (ksh. 70) <br>
+              <input type="checkbox" name="topping" class="topping" value="120"> Red Onion Toppings (ksh. 120) <br>
+              <input type="checkbox" name="topping" class="topping" value="200"> Sausage Toppings (ksh. 200) <br>
+            </div>
+
+            <div class="numberOfPizzas">
+              <label for="numberOfPizzas">Number of Pizzas</label>
+              <input type="number" id="numberOfPizzas">
+            </div>
+          </div>
+          <button type="submit" class="md-3 mt-3" id="submit">Submit</button>
+        </form>
+      </div>
+      <div id="delivery-plan">
+        <h3>Choose a Delivery Plan</h3>
+        <div class="radio">
+          <label for="delivery">
+            <input type="radio" name="delivery-option" id="pickup" value="0">
+            <label for="pickup">I will pick it up myself</label><br>
+            <input type="radio" name="delivery-option" id="delivery" value="200">
+            <label for="delivery">Order a delivery</label><br>
+          </label>
+        </div>
+        <form id="delivery-location">
+          <div id="personal-details">
+            <h4>Please Enter Your Personal Details</h4>
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" class="form-control" id="first-name">
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" class="form-control" id="last-name">
+            </div>
+            <div class="form-group">
+              <label for="id-number">ID Number</label>
+              <input type="text" class="form-control" id="id-number">
+            </div>
+            <div class="form-group">
+              <label for="phone-number">Phone Number</label>
+              <input type="number" class="form-control" id="phone-number">
+            </div>
+          </div>
+          <div class="address">
+            <h4>Please Enter the Address of the Preferred delivery location</h4>
+            <div class="form-group">
+              <label for="street">Street</label>
+              <input type="text" class="form-control" id="street">
+            </div>
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" class="form-control" id="city">
+            </div>
+            <div class="form-group">
+              <label for="county">County</label>
+              <input type="text" class="form-control" id="county">
+            </div>
+            <button type="submit" class="md-3 mt-3" id="enter-location">Submit</button>
+          </div>
+        </form>
+        <button type="submit" id="checkout">Checkout your order</button>
+      </div>
+      <div id="your-order">
+        <h3>Checkout Section</h3>
+        <p class="results"></p>
+        <p class=""></p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

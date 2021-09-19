@@ -1,0 +1,63 @@
+nav{
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+span {
+  color: brown;
+}
+.home{
+  margin-top: 10px;
+  /* background-color: rgb(225, 206, 206); */
+  height: 500px;
+  background-image: url("../images/eating_together.png");
+  background-size: 700px;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+}
+.description{
+  position: relative;
+  top: 100px;
+  max-width: 800px;
+  margin-left: 650px;
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+.section{
+  background-color: rgb(104, 103, 103);
+}
+.recipe {
+  display: flex;
+  justify-content: space-around;
+}
+.recipe1{
+  height: 300px;
+  width: 300px;
+  margin: 5px;
+  border: 2px solid black;
+  background-color: white;
+  text-align: center;
+  border-radius: 0 0 20% 20%;
+}
+fieldset>label{
+  width: 300px;
+}
+.orders{
+  background-color: blueviolet;
+}
+.form-control{
+  width: 300px;
+}
+#delivery-location{
+  display: flex;
+  display: none;
+  justify-content: space-around;
+}
+/* input[type=checkbox]{
+  transform: :scale(1.5);
+} */
