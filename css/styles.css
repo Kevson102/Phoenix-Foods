@@ -44,8 +44,19 @@ h3{
   text-align: center;
   border-radius: 0 0 20% 20%;
 }
-label{
+fieldset>label{
   width: 300px;
+}
+.orders{
+  background-color: blueviolet;
+}
+.form-control{
+  width: 300px;
+}
+#delivery-location{
+  display: flex;
+  display: none;
+  justify-content: space-around;
 }
 /* input[type=checkbox]{
   transform: :scale(1.5);

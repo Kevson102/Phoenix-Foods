@@ -25,7 +25,6 @@ $(document).ready(function() {
   $("form#order").submit(function(event) {
     event.preventDefault();
 
-
     var selectedPizzaName = $("#pizza-type option:selected").text();
     var selectedPizzaSize = $("#size option:selected").text();
     var CostOfSelectedPizzaSize = parseInt($("#size option:selected").val());
@@ -51,6 +50,16 @@ $(document).ready(function() {
     // alert(typeof(selectedPizzaSize));
 
     // alert(selectedCrust.text());
+  });
+  $("#delivery").change(function(){
+    if(this.checked == true){
+      $("#delivery-location").show().css("display", "flex");
+    }
+  })
+  $("#pickup").change(function(){
+    if(this.checked == true){
+      $("#delivery-location").hide()
+    }
   })
   // $("ul#your-order").append("<li><span class ='contact'>"+ newOrder + "</span></li>");
 
