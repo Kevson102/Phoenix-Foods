@@ -84,7 +84,7 @@
       </div>
       <div class="orders" id="orders">
         <h3>Place your Order Here. We are glad to serve you</h3>
-        <form action="">
+        <form action="" id="order">
           <div class="form-group card">
             <fieldset>
               <label for="pizza-type">Choose your preferred flavour</label>
@@ -115,27 +115,27 @@
             </fieldset>
             <h5>Choose Toppings</h5>
             <div>
-              <input type="checkbox" value="100">
-              <label for="toppings">Beef toppings (Ksh. 100)</label>
+              <input type="checkbox" name="topping" class="topping" value="100">Beef toppings (Ksh. 100) <br>
+              <input type="checkbox" name="topping" class="topping" value="150"> Black Olives Toppings (ksh. 150) <br>
+              <input type="checkbox" name="topping" class="topping" value="70"> Mushroom Topping (ksh. 70) <br>
+              <input type="checkbox" name="topping" class="topping" value="120"> Red Onion Toppings (ksh. 120) <br>
+              <input type="checkbox" name="topping" class="topping" value="200"> Sausage Toppings (ksh. 200) <br>
             </div>
-            <div>
-              <input type="checkbox" value="150"> 
-              <label for="toppings">Black Olives Toppings (ksh. 150)</label>
-            </div>
-            <div>
-              <input type="checkbox" value="70"> 
-              <label for="toppings">Mushroom Topping (ksh. 70)</label>
-            </div>
-            <div>
-              <input type="checkbox" value="120"> 
-              <label for="toppings">Red Onion Toppings (ksh. 120)</label>
-            </div>            <div>
-              <input type="checkbox" value="200"> 
-              <label for="toppings">Sausage Toppings (ksh. 200)</label>
+
+            <div class="numberOfPizzas">
+              <label for="numberOfPizzas">Number of Pizzas</label>
+              <input type="number" id="numberOfPizzas">
             </div>
           </div>
-          <button type="submit" class="md-3 mt-3">Submit</button>
+          <button type="submit" class="md-3 mt-3" id="submit">Submit</button>
         </form>
+
+
+        <div>
+          <ul id="your-order">
+
+          </ul>
+        </div>
         <div class="delivery">
           <h3>Choose a Delivery plan</h3>
           <div class="radio">
