@@ -78,8 +78,8 @@ $(document).ready(function() {
       var selectedDeliveryLocation = new Delivery(enteredFirstName, enteredSecondName, enteredIdNumber, enteredPhoneNumber, enteredStreet, enteredCity, enteredCounty);
       alert(selectedDeliveryLocation)
       alert(enteredFirstName)
+
+      
     });
   });
-
-
 })
