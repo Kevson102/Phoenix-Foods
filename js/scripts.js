@@ -20,6 +20,8 @@ function Delivery(firstName, secondName, idNumber, phoneNumber){
 
 
 
+
+
 // USER INTERFACE
 $(document).ready(function() {
   $("form#order").submit(function(event) {
@@ -40,12 +42,18 @@ $(document).ready(function() {
     });
     var costOfSelectedToppings = costOfSelectedToppings.map(Number);
     var selectedQuantity = parseInt($("#numberOfPizzas").val());
+    var deliveryFee = 250;
 
     var newOrder = new Orders(selectedPizzaName, selectedPizzaSize, CostOfSelectedPizzaSize, selectedCrust, costOfSelectedCrust, selectedToppings, costOfSelectedToppings, selectedQuantity);
     alert(newOrder);
-    console.log(newOrder)
+    // console.log(newOrder)
+    /////////////////////////////////////////////
+    const reducer = (firstValue, secondValue)=>firstValue + secondValue;
+    var totalToppingPrice = costOfSelectedToppings.reduce(reducer);
+    var totalPizzaCharges = deliveryFee + selectedQuantity*(CostOfSelectedPizzaSize+costOfSelectedCrust+totalToppingPrice)
+    alert(totalPizzaCharges)
+    ////////////////////////////////////
   });
-
 
   $("#delivery").change(function(){
     if(this.checked == true){
