@@ -54,7 +54,7 @@ $(document).ready(function() {
     totalPizzaCharges = deliveryFee + selectedQuantity*(CostOfSelectedPizzaSize+costOfSelectedCrust+totalToppingPrice)
     alert(totalPizzaCharges)
     ////////////////////////////////////
-    $(".results").html("you have ordered a " + selectedPizzaName + "with a "+ selectedCrust +" crust")
+    $(".results").html("you have ordered a " + selectedPizzaName + " with a "+ selectedCrust +" crust. The total charges of your order are "+ totalPizzaCharges+" Ksh.")
 
   });
   $("#delivery").change(function(){
