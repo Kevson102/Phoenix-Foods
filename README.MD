@@ -6,7 +6,7 @@
 This is a website for a pizza place where customers can learn more about the business, view the recipe, place an order and ask for delivery.
 
 ## Prototype.
-<img src="./images/ Delani Studio.jpg" raw = true alt = "Website design">
+<img src="./images/Design.jpg" raw = true alt = "Website design">
 
 ## Setup/Installation Requirements.
 * Install Google Chrome on your machine.
