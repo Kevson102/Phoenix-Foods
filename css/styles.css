@@ -88,6 +88,10 @@ fieldset>label{
   text-align: center;
   height: 200px;
 }
+#your-order>img{
+  float: right;
+  height: 100px;
+}
 footer{
   display: flex;
   justify-content: space-around;
