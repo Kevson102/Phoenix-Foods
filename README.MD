@@ -19,7 +19,7 @@ This is a website for a pizza place where customers can learn more about the bus
 ## Live link.
 https://kevson102.github.io/Phoenix-Foods/
 
-## [Demo](./Demo/Muncher's website Demo.mp4)
+[Demo](./Demo/Muncher's website Demo.mp4)
 #
 #
 ## Known Bugs
