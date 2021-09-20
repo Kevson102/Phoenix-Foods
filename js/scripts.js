@@ -22,7 +22,7 @@ function Delivery(firstName, secondName, idNumber, phoneNumber){
 
 
 
-// USER INTERFACE
+////////////////////////////////////////// USER INTERFACE/////////////////////////////////////////
 $(document).ready(function() {
   $("form#order").submit(function(event) {
     event.preventDefault();
@@ -45,14 +45,12 @@ $(document).ready(function() {
     var deliveryFee = 200;
 
     var newOrder = new Orders(selectedPizzaName, selectedPizzaSize, CostOfSelectedPizzaSize, selectedCrust, costOfSelectedCrust, selectedToppings, costOfSelectedToppings, selectedQuantity);
-    // alert(newOrder);
-    // console.log(newOrder)
+
     /////////////////////////////////////////////
     const reducer = (firstValue, secondValue)=>firstValue + secondValue;
     var totalToppingPrice = costOfSelectedToppings.reduce(reducer);
     /// THE VARIABLE BELOW HAS BEEN PRESENTED AS A GLOBAL VARIABLE
     totalPizzaCharges = deliveryFee + selectedQuantity*(CostOfSelectedPizzaSize+costOfSelectedCrust+totalToppingPrice)
-    // alert(totalPizzaCharges)
     ////////////////////////////////////
     $(".results").html("you have ordered "+selectedQuantity+" " + selectedPizzaSize+" "+selectedPizzaName + " with a "+ selectedCrust +" crust. The total charges for your order are "+ totalPizzaCharges+" Ksh.")
 
@@ -60,6 +58,9 @@ $(document).ready(function() {
   $("#delivery").change(function(){
     if(this.checked == true){
       $("#delivery-location").show().css("display", "flex");
+      if(this.checked == true && $(window).width() < 624){
+        $("#delivery-location").show().css("display", "inline");
+      }
     }
   });
   $("#pickup").change(function(){
@@ -81,18 +82,9 @@ $(document).ready(function() {
     var enteredCounty = $("#county").val();
 
     var selectedDeliveryLocation = new Delivery(enteredFirstName, enteredSecondName, enteredIdNumber, enteredPhoneNumber, enteredStreet, enteredCity, enteredCounty);
-    // alert(selectedDeliveryLocation.enteredCity)
+
     alert("Hello " +enteredFirstName+". Thankyou for Choosing us. Your order will be dispatched ASAP and will be delivered at "+enteredStreet+", "+enteredCity+", "+enteredCounty+". You will receive a call once our delivery person arrives. The Delivery fee is KSh 200")
 
-    $(".location").html("Your order will be delivered at")
-
-
-
-
-    /// OUTPUT SECTION
-
-    // $("button#checkout").submit(function(){
-    //   $("#your-order"). append("this is your work")
-    // })
+    // $(".location").html("Your order will be delivered at")
   });
 })
