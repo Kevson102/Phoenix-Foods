@@ -42,7 +42,7 @@ $(document).ready(function() {
     });
     var costOfSelectedToppings = costOfSelectedToppings.map(Number);
     var selectedQuantity = parseInt($("#numberOfPizzas").val());
-    var deliveryFee = 250;
+    var deliveryFee = 200;
 
     var newOrder = new Orders(selectedPizzaName, selectedPizzaSize, CostOfSelectedPizzaSize, selectedCrust, costOfSelectedCrust, selectedToppings, costOfSelectedToppings, selectedQuantity);
     // alert(newOrder);
