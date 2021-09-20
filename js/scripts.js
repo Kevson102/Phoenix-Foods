@@ -82,7 +82,7 @@ $(document).ready(function() {
 
     var selectedDeliveryLocation = new Delivery(enteredFirstName, enteredSecondName, enteredIdNumber, enteredPhoneNumber, enteredStreet, enteredCity, enteredCounty);
     // alert(selectedDeliveryLocation.enteredCity)
-    alert("Hello " +enteredFirstName+". Thankyou for Choosing us. Your order will be dispatched ASAP and will be delivered at "+enteredStreet+", "+enteredCity+", "+enteredCounty+". You will receive a call once our delivery person arrives.")
+    alert("Hello " +enteredFirstName+". Thankyou for Choosing us. Your order will be dispatched ASAP and will be delivered at "+enteredStreet+", "+enteredCity+", "+enteredCounty+". You will receive a call once our delivery person arrives. The Delivery fee is KSh 200")
 
     $(".location").html("Your order will be delivered at")
 
