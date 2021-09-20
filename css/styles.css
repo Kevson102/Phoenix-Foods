@@ -83,4 +83,32 @@ fieldset>label{
   color: aliceblue;
   height: 200px;
 }
-
+footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(54, 164, 98);
+  margin-top: 25px;
+  text-align: center;
+  color: white;
+}
+#follow{
+  display: flex;
+}
+#first{
+  padding-top: 60px;
+}
+#second{
+  margin: 20px;
+  border-left: 3px dashed #4C9BA0;
+  padding-left: 30px;
+  text-align: left;
+}
+#contacts>p, #description>p{
+  margin: 0;
+}
+#rights{
+  background-color: rgb(54, 164, 98);
+  margin-top: 0;
+  color: white;
+  text-align: center;
+}
