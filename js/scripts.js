@@ -45,14 +45,14 @@ $(document).ready(function() {
     var deliveryFee = 250;
 
     var newOrder = new Orders(selectedPizzaName, selectedPizzaSize, CostOfSelectedPizzaSize, selectedCrust, costOfSelectedCrust, selectedToppings, costOfSelectedToppings, selectedQuantity);
-    alert(newOrder);
+    // alert(newOrder);
     // console.log(newOrder)
     /////////////////////////////////////////////
     const reducer = (firstValue, secondValue)=>firstValue + secondValue;
     var totalToppingPrice = costOfSelectedToppings.reduce(reducer);
     /// THE VARIABLE BELOW HAS BEEN PRESENTED AS A GLOBAL VARIABLE
     totalPizzaCharges = deliveryFee + selectedQuantity*(CostOfSelectedPizzaSize+costOfSelectedCrust+totalToppingPrice)
-    alert(totalPizzaCharges)
+    // alert(totalPizzaCharges)
     ////////////////////////////////////
     $(".results").html("you have ordered a " + selectedPizzaName + " with a "+ selectedCrust +" crust. The total charges of your order are "+ totalPizzaCharges+" Ksh.")
 
@@ -65,6 +65,7 @@ $(document).ready(function() {
   $("#pickup").change(function(){
     if(this.checked == true){
       $("#delivery-location").hide()
+      alert("Thank you for shopping with us. You can pick up your order any time from now. See checkout section for the details of your order")
     }
   });
 
@@ -72,17 +73,17 @@ $(document).ready(function() {
     event.preventDefault();
 
     var enteredFirstName = $("#first-name").val();
-    var enteredSecondName = $("#last-name").text();
+    var enteredSecondName = $("#last-name").val();
     var enteredIdNumber = $("#id-number").val();
     var enteredPhoneNumber = $("#phone-number").val();
-    var enteredStreet = $("#street").text();
-    var enteredCity = $("#city").text();
-    var enteredCounty = $("#county").text();
+    var enteredStreet = $("#street").val();
+    var enteredCity = $("#city").val();
+    var enteredCounty = $("#county").val();
 
     var selectedDeliveryLocation = new Delivery(enteredFirstName, enteredSecondName, enteredIdNumber, enteredPhoneNumber, enteredStreet, enteredCity, enteredCounty);
-    alert(selectedDeliveryLocation)
-    alert(enteredFirstName)
-    alert(totalPizzaCharges)
+    alert(selectedDeliveryLocation.enteredCity)
+    alert("Hello " +enteredFirstName+". Thankyou for Choosing us. Your order will be dispatched ASAP and will be delivered at "+enteredStreet+", "+enteredCity+", "+enteredCounty+". You will receive a call once our delivery person arrives.")
+
     $(".location").html("Your order will be delivered at")
 
 
