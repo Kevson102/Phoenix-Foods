@@ -80,7 +80,8 @@ fieldset>label{
 #your-order{
   margin-top: 10px;
   background-color: plum;
-  color: aliceblue;
+  color: black;
+  text-align: center;
   height: 200px;
 }
 footer{
