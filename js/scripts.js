@@ -54,7 +54,7 @@ $(document).ready(function() {
     totalPizzaCharges = deliveryFee + selectedQuantity*(CostOfSelectedPizzaSize+costOfSelectedCrust+totalToppingPrice)
     // alert(totalPizzaCharges)
     ////////////////////////////////////
-    $(".results").html("you have ordered a " + selectedPizzaName + " with a "+ selectedCrust +" crust. The total charges of your order are "+ totalPizzaCharges+" Ksh.")
+    $(".results").html("you have ordered "+selectedQuantity+" " + selectedPizzaSize+" "+selectedPizzaName + " with a "+ selectedCrust +" crust. The total charges for your order are "+ totalPizzaCharges+" Ksh.")
 
   });
   $("#delivery").change(function(){
@@ -81,7 +81,7 @@ $(document).ready(function() {
     var enteredCounty = $("#county").val();
 
     var selectedDeliveryLocation = new Delivery(enteredFirstName, enteredSecondName, enteredIdNumber, enteredPhoneNumber, enteredStreet, enteredCity, enteredCounty);
-    alert(selectedDeliveryLocation.enteredCity)
+    // alert(selectedDeliveryLocation.enteredCity)
     alert("Hello " +enteredFirstName+". Thankyou for Choosing us. Your order will be dispatched ASAP and will be delivered at "+enteredStreet+", "+enteredCity+", "+enteredCounty+". You will receive a call once our delivery person arrives.")
 
     $(".location").html("Your order will be delivered at")

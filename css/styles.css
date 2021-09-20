@@ -1,3 +1,6 @@
+body{
+  background-color: rgb(89, 194, 131);
+}
 nav{
   background-color: gray;
   display: flex;
@@ -10,7 +13,8 @@ span {
 }
 .home{
   margin-top: 10px;
-  /* background-color: rgb(225, 206, 206); */
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255);
   height: 500px;
   background-image: url("../images/eating_together.png");
   background-size: 700px;
@@ -45,10 +49,12 @@ h3{
   border-radius: 0 0 20% 20%;
 }
 fieldset>label{
-  width: 300px;
+  width: 200px;
 }
 .orders{
-  background-color: blueviolet;
+  background-color: plum;
+  margin-top: 10px;
+  /* text-align: center; */
 }
 .form-control{
   width: 300px;
@@ -58,6 +64,23 @@ fieldset>label{
   display: none;
   justify-content: space-around;
 }
-/* input[type=checkbox]{
-  transform: :scale(1.5);
-} */
+.flexed{
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+}
+.card{
+  background-color: transparent;
+}
+#delivery-plan{
+  margin-top: 10px;
+  background-image: url("../images/background/delivery.jpg");
+  color: rgb(0, 0, 0);
+}
+#your-order{
+  margin-top: 10px;
+  background-color: plum;
+  color: aliceblue;
+  height: 200px;
+}
+
