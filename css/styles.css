@@ -130,7 +130,6 @@ footer{
     overflow-y: scroll;
   }
   .description{
-    /* position: relative; */
     top: 100px;
     width: auto;
     margin-left: auto;
@@ -164,7 +163,6 @@ footer{
     background-size: auto;
   }
   .description{
-    /* position: relative; */
     top: 100px;
     width: auto;
     margin-left: auto;
@@ -189,7 +187,6 @@ footer{
     background-size: auto;
   }
   .description{
-    /* position: relative; */
     top: 100px;
     width: auto;
     margin-left: auto;
@@ -206,7 +203,6 @@ footer{
     background-size: auto;
   }
   .description{
-    /* position: relative; */
     top: 100px;
     width: auto;
     margin-left: auto;
@@ -231,84 +227,3 @@ footer{
     justify-content: space-around;
   }
 }
-/* @media screen and (min-width:320px) and (max-width:374px) {
-
-}
-@media screen and (min-width:375px) and (max-width:480px) {
-  .comment{
-    width: 300px;
-  }
-  #mce-FNAME, #mce-EMAIL {
-    width: 250px;
-  }
-  .row1{
-    display: inline-block;
-    }
-  .outer{
-    display: inline-block;
-    position: relative;
-    bottom: 25px;
-  }
-  .row1>img{
-    margin-right: 5px;
-  }
-  .outer{
-    margin-right: 5px;
-
-  }
-}
-@media screen and (min-width:481px) and (max-width:768px) {
-  .comment{
-    width: 500px;
-  }
-
-  #mce-FNAME, #mce-EMAIL {
-    width: 400px;
-  }
-  .row1{
-    display: inline-block;
-    }
-  .outer{
-    display: inline-block;
-    position: relative;
-    bottom: 25px;
-  }
-  .row1>img{
-    margin-right: 5px;
-  }
-  .outer{
-    margin-right: 5px;
-
-  }
-}
-@media screen and (min-width:769px) and (max-width:1024px) {
-  .comment{
-    width: 700px;
-  }
-  .row1{
-    display: inline-block;
-    }
-  .outer{
-    display: inline-block;
-    position: relative;
-    bottom: 20px;
-  }
-  .row1>img{
-    margin-right: 5px;
-  }
-  .outer{
-    margin-right: 5px;
-
-  }
-}
-@media screen and (min-width:1025px) and (max-width:1200px) {
-  .comment{
-    width: 900px;
-  }
-  .row1>img{
-    margin-right: 5px;
-  }
-}
-@media screen and (min-width:1201px){
-  
-} */
